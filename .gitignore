@@ -1,0 +1,13 @@
+node_modules/
+dist/
+package.zip
+test-artifacts/
+release/
+BLOCKED.md
+PROGRESS.md
+TEST-REPORT.md
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

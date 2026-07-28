@@ -1,0 +1,41 @@
+{
+  "name": "siyuan-table-merge",
+  "author": "Acetab",
+  "url": "https://github.com/Acetab/siyuan-table-merge",
+  "version": "0.1.5",
+  "minAppVersion": "3.0.0",
+  "kernels": [
+    "windows"
+  ],
+  "backends": [
+    "windows"
+  ],
+  "frontends": [
+    "desktop"
+  ],
+  "disabledInPublish": true,
+  "displayName": {
+    "default": "Table Merge",
+    "zh-CN": "表格合并"
+  },
+  "description": {
+    "default": "Preview, review, back up, and safely merge Markdown tables into an explicitly selected SiYuan table.",
+    "zh-CN": "预览差异、人工处理冲突、备份并安全合并 Markdown 表格到明确选中的思源表格。"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh-CN": "README.zh-CN.md"
+  },
+  "keywords": [
+    "table",
+    "markdown",
+    "merge",
+    "AI",
+    "resource",
+    "link",
+    "表格",
+    "合并",
+    "资源整理",
+    "链接"
+  ]
+}

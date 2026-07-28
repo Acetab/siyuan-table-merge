@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="768" viewBox="0 0 1024 768">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111716"/>
+      <stop offset="1" stop-color="#1b2522"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#07100e" flood-opacity=".46"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="768" fill="url(#bg)"/>
+  <circle cx="116" cy="90" r="170" fill="#287f70" opacity=".12"/>
+  <circle cx="930" cy="694" r="230" fill="#eaa243" opacity=".07"/>
+
+  <g transform="translate(64 54)">
+    <rect width="62" height="62" rx="16" fill="#287f70"/>
+    <g fill="#f5f2e8">
+      <rect x="14" y="14" width="13" height="13" rx="2"/>
+      <rect x="31" y="14" width="13" height="13" rx="1"/>
+      <rect x="48" y="14" width="1" height="13"/>
+      <rect x="14" y="31" width="13" height="13"/>
+      <rect x="31" y="31" width="13" height="13"/>
+      <rect x="48" y="31" width="1" height="13"/>
+      <rect x="14" y="48" width="13" height="1"/>
+      <rect x="31" y="48" width="13" height="1"/>
+    </g>
+    <circle cx="48" cy="48" r="8" fill="#eba33f"/>
+    <path d="M48 43v10M43 48h10" stroke="#f5f2e8" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  <text x="146" y="82" fill="#f8f6ef" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="34" font-weight="700">Table Merge</text>
+  <text x="147" y="109" fill="#9fb8b1" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="16">安全合并人工复核后的 Markdown 表格</text>
+
+  <g filter="url(#shadow)">
+    <rect x="64" y="154" width="286" height="500" rx="18" fill="#202a27" stroke="#35443f"/>
+    <text x="88" y="189" fill="#f3f0e7" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="17" font-weight="650">定期整理后的输入</text>
+    <rect x="88" y="207" width="238" height="34" rx="8" fill="#17201e"/>
+    <circle cx="105" cy="224" r="5" fill="#eba33f"/>
+    <text x="119" y="229" fill="#b9cbc6" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13">reviewed-resources.md</text>
+
+    <text x="88" y="274" fill="#69b9a9" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13" font-weight="650">数学 › 课程、教材与讲义</text>
+    <g transform="translate(88 288)">
+      <rect width="238" height="124" rx="10" fill="#18211f" stroke="#34443f"/>
+      <path d="M0 34h238M0 66h238M0 96h238M85 0v124M157 0v124" stroke="#3e514b"/>
+      <g fill="#d9e3df" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="11">
+        <text x="12" y="22">资源</text><text x="98" y="22">类型</text><text x="170" y="22">来源</text>
+        <text x="12" y="55">高数讲义</text><text x="98" y="55">讲义</text><text x="170" y="55">群 A</text>
+        <text x="12" y="87">强化课程</text><text x="98" y="87">课程</text><text x="170" y="87">群 B</text>
+        <text x="12" y="117">真题解析</text><text x="98" y="117">题库</text><text x="170" y="117">群 C</text>
+      </g>
+    </g>
+
+    <text x="88" y="448" fill="#69b9a9" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13" font-weight="650">数学 › 真题与题库</text>
+    <g transform="translate(88 462)">
+      <rect width="238" height="108" rx="10" fill="#18211f" stroke="#34443f"/>
+      <path d="M0 34h238M0 71h238M85 0v108M157 0v108" stroke="#3e514b"/>
+      <g fill="#d9e3df" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="11">
+        <text x="12" y="22">资源</text><text x="98" y="22">类型</text><text x="170" y="22">来源</text>
+        <text x="12" y="58">历年真题</text><text x="98" y="58">真题</text><text x="170" y="58">群 A</text>
+        <text x="12" y="94">模拟题集</text><text x="98" y="94">题库</text><text x="170" y="94">群 D</text>
+      </g>
+    </g>
+    <rect x="88" y="594" width="148" height="34" rx="8" fill="#287f70"/>
+    <text x="112" y="616" fill="#fff" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13" font-weight="650">扫描 Markdown 表格</text>
+  </g>
+
+  <g>
+    <path d="M377 390h72" stroke="#69b9a9" stroke-width="5" stroke-linecap="round"/>
+    <path d="M437 375l18 15-18 15" fill="none" stroke="#69b9a9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="414" cy="340" r="28" fill="#287f70"/>
+    <path d="M403 333h22M403 340h22M403 347h22M410 326v28M418 326v28" stroke="#f5f2e8" stroke-width="2" opacity=".9"/>
+    <circle cx="431" cy="357" r="9" fill="#eba33f"/>
+    <path d="M431 353v8M427 357h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="376" y="435" fill="#9fb8b1" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="12">预览差异后写入</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="478" y="154" width="482" height="500" rx="18" fill="#f5f3ed"/>
+    <rect x="478" y="154" width="482" height="54" rx="18" fill="#ece9e0"/>
+    <rect x="478" y="190" width="482" height="18" fill="#ece9e0"/>
+    <circle cx="505" cy="181" r="6" fill="#287f70"/>
+    <text x="522" y="187" fill="#25322e" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">合并 Markdown 表格</text>
+
+    <rect x="502" y="226" width="434" height="43" rx="9" fill="#fff" stroke="#d5d9d5"/>
+    <text x="518" y="252" fill="#56645f" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13">目标表格块已选择 · 42 行</text>
+
+    <text x="502" y="298" fill="#25322e" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">匹配表格</text>
+    <g transform="translate(502 312)">
+      <rect width="434" height="72" rx="10" fill="#edf6f3" stroke="#91c8bd"/>
+      <rect x="15" y="17" width="16" height="16" rx="3" fill="#287f70"/>
+      <path d="M19 25l4 4 7-9" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      <text x="43" y="30" fill="#27423a" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13" font-weight="650">reviewed-resources.md</text>
+      <text x="43" y="52" fill="#58736b" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="12">数学 › 课程、教材与讲义 · 3 行数据</text>
+    </g>
+
+    <g transform="translate(502 402)">
+      <rect width="434" height="59" rx="10" fill="#fff" stroke="#d5d9d5"/>
+      <text x="16" y="24" fill="#25322e" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="12" font-weight="650">原行数 42　新增 3　重复 1　冲突 1</text>
+      <text x="16" y="44" fill="#287f70" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="12">合并后 45 行 · 所有链接保留</text>
+    </g>
+
+    <g transform="translate(502 478)">
+      <rect width="434" height="102" rx="10" fill="#fff8ed" stroke="#ebc98f"/>
+      <circle cx="20" cy="23" r="7" fill="#eba33f"/>
+      <text x="35" y="28" fill="#5f4a28" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13" font-weight="700">发现来源差异，需要人工确认</text>
+      <circle cx="20" cy="57" r="7" fill="#287f70"/>
+      <circle cx="20" cy="83" r="7" fill="#fff" stroke="#86948f"/>
+      <text x="35" y="61" fill="#5f625e" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="12">保留原行，仅合并来源</text>
+      <text x="35" y="87" fill="#7c817e" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="12">使用输入行</text>
+    </g>
+
+    <rect x="750" y="598" width="186" height="36" rx="9" fill="#287f70"/>
+    <text x="776" y="621" fill="#fff" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13" font-weight="700">最终确认并安全写入</text>
+  </g>
+
+  <g transform="translate(64 698)">
+    <circle cx="8" cy="8" r="8" fill="#287f70"/>
+    <path d="M4 8l3 3 5-6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="25" y="13" fill="#a9bbb6" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13">明确选择目标</text>
+    <circle cx="180" cy="8" r="8" fill="#287f70"/>
+    <path d="M176 8l3 3 5-6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="197" y="13" fill="#a9bbb6" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13">逐项审核冲突</text>
+    <circle cx="356" cy="8" r="8" fill="#287f70"/>
+    <path d="M352 8l3 3 5-6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="373" y="13" fill="#a9bbb6" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13">写入前备份</text>
+    <circle cx="510" cy="8" r="8" fill="#287f70"/>
+    <path d="M506 8l3 3 5-6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="527" y="13" fill="#a9bbb6" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13">写入后验证</text>
+  </g>
+</svg>

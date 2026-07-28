@@ -1,0 +1,27 @@
+{
+  "name": "siyuan-table-merge",
+  "version": "0.1.5",
+  "description": "Preview, review, back up, and safely merge Markdown tables into an explicitly selected SiYuan table.",
+  "private": true,
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Acetab/siyuan-table-merge.git"
+  },
+  "scripts": {
+    "assets": "node scripts/render-assets.mjs",
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "npm run assets && vite build",
+    "package": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package.ps1",
+    "validate:marketplace": "node scripts/validate-marketplace.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "sharp": "^0.35.3",
+    "siyuan": "^1.2.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vitest": "^3.0.5"
+  }
+}

@@ -1,0 +1,55 @@
+name: Release plugin
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate tag and versions
+        shell: bash
+        run: |
+          TAG="${GITHUB_REF_NAME#v}"
+          PLUGIN_VERSION="$(node -p "require('./plugin.json').version")"
+          PACKAGE_VERSION="$(node -p "require('./package.json').version")"
+          LOCK_VERSION="$(node -p "require('./package-lock.json').version")"
+          test "$TAG" = "$PLUGIN_VERSION" || { echo "Tag $TAG does not match plugin.json $PLUGIN_VERSION"; exit 1; }
+          test "$TAG" = "$PACKAGE_VERSION" || { echo "Tag $TAG does not match package.json $PACKAGE_VERSION"; exit 1; }
+          test "$TAG" = "$LOCK_VERSION" || { echo "Tag $TAG does not match package-lock.json $LOCK_VERSION"; exit 1; }
+
+      - name: Check, test, and build
+        run: |
+          npm run check
+          npm test
+          npm run build
+
+      - name: Create marketplace package
+        shell: bash
+        run: |
+          cp plugin.json README.md README.zh-CN.md README-install.zh-CN.md CONTRIBUTING.md SECURITY.md LICENSE icon.png preview.png dist/
+          node scripts/validate-marketplace.mjs --root dist
+          (cd dist && zip -r ../package.zip .)
+          unzip -l package.zip
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" package.zip --title "$GITHUB_REF_NAME" --generate-notes
