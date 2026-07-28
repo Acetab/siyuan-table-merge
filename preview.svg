@@ -61,7 +61,7 @@
       </g>
     </g>
     <rect x="88" y="594" width="148" height="34" rx="8" fill="#287f70"/>
-    <text x="112" y="616" fill="#fff" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13" font-weight="650">扫描 Markdown 表格</text>
+    <text x="162" y="616" fill="#fff" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" text-anchor="middle">扫描表格</text>
   </g>
 
   <g>
@@ -110,7 +110,7 @@
     </g>
 
     <rect x="750" y="598" width="186" height="36" rx="9" fill="#287f70"/>
-    <text x="776" y="621" fill="#fff" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13" font-weight="700">最终确认并安全写入</text>
+    <text x="843" y="621" fill="#fff" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" text-anchor="middle">确认合并</text>
   </g>
 
   <g transform="translate(64 698)">
