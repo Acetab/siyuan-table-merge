@@ -2,7 +2,7 @@
   "name": "siyuan-table-merge",
   "author": "Acetab",
   "url": "https://github.com/Acetab/siyuan-table-merge",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "minAppVersion": "3.0.0",
   "kernels": [
     "windows"

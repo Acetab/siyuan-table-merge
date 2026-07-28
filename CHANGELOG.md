@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.6 - 2026-07-28
+
+- Shorten and center preview button labels to prevent text overflow.
+
 ## 0.1.5 - 2026-07-28
 
 - Show source filenames and Markdown heading paths in the multi-table picker.
