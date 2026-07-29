@@ -1,6 +1,6 @@
 {
   "name": "siyuan-table-merge",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Preview, review, back up, and safely merge Markdown tables into an explicitly selected SiYuan table.",
   "private": true,
   "type": "module",
@@ -12,7 +12,8 @@
     "assets": "node scripts/render-assets.mjs",
     "check": "tsc --noEmit",
     "test": "vitest run",
-    "build": "npm run assets && vite build",
+    "build:code": "vite build",
+    "build": "npm run assets && npm run build:code",
     "package": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package.ps1",
     "validate:marketplace": "node scripts/validate-marketplace.mjs"
   },

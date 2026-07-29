@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.7 - 2026-07-29
+
+- Preserve the reviewed preview and icon PNG files in Linux release builds
+  instead of re-rendering their SVG sources without the required fonts.
+
 ## 0.1.6 - 2026-07-28
 
 - Shorten and center preview button labels to prevent text overflow.

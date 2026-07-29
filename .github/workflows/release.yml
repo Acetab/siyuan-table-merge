@@ -39,7 +39,7 @@ jobs:
         run: |
           npm run check
           npm test
-          npm run build
+          npm run build:code
 
       - name: Create marketplace package
         shell: bash
