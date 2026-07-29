@@ -1,6 +1,6 @@
 {
   "name": "siyuan-table-merge",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "Preview, review, back up, and safely merge Markdown tables into an explicitly selected SiYuan table.",
   "private": true,
   "type": "module",

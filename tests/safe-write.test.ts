@@ -92,6 +92,14 @@ describe("安全写入反向验证", () => {
     expect(api.markdown).toContain("https://example.com/b");
   });
 
+  it("只有数据行：未经人工映射不得直接进入安全写入", async () => {
+    const api = new FakeKernel();
+    const rowOnly = "| B | [下载](https://example.com/b) | 人工 |";
+    await expect(createPreview(api, "block-1", rowOnly))
+      .rejects.toThrow("没有识别到 Markdown 表格");
+    expect(api.updateCalls).toBe(0);
+  });
+
   it("来源合并选项：写入前后只改变来源单元格并通过反向验证", async () => {
     const api = new FakeKernel();
     const backups = new FakeBackups();

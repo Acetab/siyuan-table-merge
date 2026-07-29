@@ -32,7 +32,20 @@ choices, a backup, and post-write verification.
 
 - Explicitly select one target table block; the plugin never guesses a note or
   destination.
-- Paste Markdown or read a local `.md` file.
+- Open the plugin on the target table and immediately render pasted content as
+  a source-column table with selectable data rows.
+- Treat the first pasted row as the source header by default and select every
+  row after it; allow the first row to be included when it is actual data.
+- Skip mapping for equal headers and reorder automatically only when the same
+  unique header names appear in a different order.
+- Paste a complete Markdown table, row-only Markdown/TSV, or read a local
+  `.md` file.
+- Require an explicit one-to-one target-column mapping confirmation for
+  headerless rows; equal column counts never approve a transfer by themselves.
+- Recover standard and SiYuan rich-text links from HTML clipboard data when
+  rows are copied directly from a SiYuan table.
+- Recover Markdown links from SiYuan rich clipboard HTML so multi-row copying
+  does not silently degrade links to plain text.
 - For multi-table files, show the source filename, Markdown heading path, line
   range, header, and first two rows.
 - Disable tables whose headers do not match the target.
@@ -46,24 +59,41 @@ choices, a backup, and post-write verification.
   count, order, contents, and links after writing.
 - Keep all table data local; no external AI or link-checking service is used.
 
-## Usage
+## Quick row transfer
 
-1. Select exactly one standard table block in SiYuan.
-2. Open **Merge Markdown Table** from the top bar.
-3. Paste reviewed Markdown or choose a local `.md` file.
-4. Scan the input and explicitly select matching tables when more than one is
-   found.
-5. Review additions, duplicates, notices, and conflicts.
-6. Resolve every conflict.
-7. Confirm the summary and perform the final write.
+1. Explicitly select the target table in SiYuan and click the top-bar icon.
+2. Paste the copied table content into the existing input box. A column-aligned
+   row picker appears immediately in the same dialog.
+3. By default, the first row is the source header and every later row is
+   selected. Use the master checkbox or individual row checkboxes to adjust
+   the selection. Disable the header option if the first row is data.
+4. Generate the preview. Equal headers pass automatically, and the same unique
+   headers in a different order are reordered. Only real mismatches require
+   manual mapping.
+5. Review additions, duplicates, notices, and conflicts, then perform the final
+   write.
 
 For the first test, use a copied table in a disposable document rather than
 the only copy of important data.
 
-## Input
+## Complete Markdown and local files
 
-The selected input table must have the same column count and header as the
-target:
+The same dialog also accepts complete Markdown tables, pipe/TSV rows, and
+local `.md` files. Multi-table selection continues to use source names,
+heading paths, and strict header checks.
+
+## Input and mapping
+
+A complete input table must have the same column count and header as the
+target. One or more data rows may also be pasted without a header. Because
+their source table cannot be proven, the plugin shows each source column, cell
+samples, and target-header choice. The default order is only a suggestion:
+every mapping must be reviewed and explicitly confirmed. Mappings must be
+one-to-one, without missing or duplicate target columns, and widths must match.
+When rows are copied directly from SiYuan, the plugin first tries to recover
+standard `<a>` and SiYuan `data-href` links from the HTML clipboard. A URL
+cannot be reconstructed if the clipboard source itself supplies only plain
+text.
 
 ```markdown
 | Resource | Type | Platform / Status | Source |
