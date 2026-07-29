@@ -34,8 +34,8 @@ versions, dependencies, build output, or release operations with the sibling
   updating this repository and its release notes, then publishing a new tag;
   Bazaar pulls the new release automatically, so do not open another listing
   PR.
-- The release approved on 2026-07-29 is `v0.2.0`, following the previously
-  verified public `v0.1.7` release (`14f21fb`).
+- The last verified public GitHub tag and Release is `v0.2.0`
+  (`11463b0`, published and package-verified 2026-07-29).
 - Before any future publication, verify the current remote Release/tag again,
   choose the intended next public version with the user, and align
   `package.json`, `package-lock.json`, and `plugin.json`.
