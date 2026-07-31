@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.2 - 2026-07-31
+
+- Enter maintenance mode and recommend Table Master for general table editing,
+  smart paste, row and column operations, sorting, transposition, width
+  adjustment, calculations, and charts.
+- Retain Table Merge for its narrower same-schema resource workflow: link
+  deduplication, conflict review, pre-write backups, and post-write validation.
+- Clarify that existing users who rely on safe resource merging can continue
+  using the plugin without migrating data.
+- No functional behavior changes.
+
 ## 0.2.1 - 2026-07-31
 
 - Clarify that the plugin primarily serves a personal workflow for

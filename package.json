@@ -1,7 +1,7 @@
 {
   "name": "siyuan-table-merge",
-  "version": "0.2.1",
-  "description": "Safely merge and deduplicate reviewed, same-schema resource tables in SiYuan.",
+  "version": "0.2.2",
+  "description": "Maintenance-mode safe merging and link deduplication for same-schema SiYuan resource tables.",
   "private": true,
   "type": "module",
   "repository": {

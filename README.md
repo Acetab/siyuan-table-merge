@@ -2,6 +2,17 @@
 
 [简体中文](README.zh-CN.md)
 
+> **Maintenance status and recommended alternative**
+>
+> This plugin is now maintained primarily for the author's own workflow and
+> essential fixes. For general table features such as smart paste, row and
+> column movement, sorting, transposition, width adjustment, calculations, and
+> charts, prefer
+> [Table Master](https://github.com/famotime/siyuan-table-master).
+>
+> Continue using this plugin only when you need same-schema resource-table
+> deduplication, conflict review, pre-write backups, and post-write validation.
+
 Safely merge reviewed Markdown tables into an existing SiYuan table selected
 by the user.
 

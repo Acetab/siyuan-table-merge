@@ -2,7 +2,7 @@
   "name": "siyuan-table-merge",
   "author": "Acetab",
   "url": "https://github.com/Acetab/siyuan-table-merge",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "minAppVersion": "3.0.0",
   "kernels": [
     "windows"
@@ -19,8 +19,8 @@
     "zh-CN": "表格合并"
   },
   "description": {
-    "default": "Safely merge and deduplicate reviewed, same-schema resource tables, especially cloud-drive link tables.",
-    "zh-CN": "安全合并并去重人工复核过的同结构资源表，尤其适合网盘链接表。"
+    "default": "Maintenance mode; prefer Table Master for general tables. This plugin only retains safe resource merging and link deduplication.",
+    "zh-CN": "维护模式；通用表格增强请优先使用「表哥」，本插件仅保留资源表安全合并与链接去重。"
   },
   "readme": {
     "default": "README.md",
