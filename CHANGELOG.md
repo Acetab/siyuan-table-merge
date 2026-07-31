@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.1 - 2026-07-31
+
+- Clarify that the plugin primarily serves a personal workflow for
+  same-schema resource tables, especially cloud-drive link tables.
+- Document that merged-cell navigation tables and other curated presentation
+  layouts remain outside the plugin's scope.
+- Direct community feedback to a dedicated Table Merge thread under the
+  existing Auto Favicon community post instead of creating a separate
+  promotional post.
+
 ## 0.2.0 - 2026-07-29
 
 - Select the destination table once, then paste and choose incoming rows in the

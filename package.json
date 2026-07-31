@@ -1,7 +1,7 @@
 {
   "name": "siyuan-table-merge",
-  "version": "0.2.0",
-  "description": "Preview, review, back up, and safely merge Markdown tables into an explicitly selected SiYuan table.",
+  "version": "0.2.1",
+  "description": "Safely merge and deduplicate reviewed, same-schema resource tables in SiYuan.",
   "private": true,
   "type": "module",
   "repository": {

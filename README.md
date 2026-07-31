@@ -28,6 +28,18 @@ Table Merge handles only the final step: merging already reviewed Markdown
 tables into an existing table with an explicit preview, manual conflict
 choices, a backup, and post-write verification.
 
+## Positioning
+
+This plugin primarily supports the author's own workflow for structured
+resource tables. It is particularly useful for incrementally merging and
+deduplicating Baidu Netdisk, Quark Drive, and similar link tables while
+reviewing provenance or access-code changes.
+
+It is not a general table-layout tool and does not manage merged cells,
+navigation-style categories, or visual beautification. Curated presentation
+tables that rely on merged cells and intentional whitespace are better
+arranged manually in SiYuan.
+
 ## Features
 
 - Explicitly select one target table block; the plugin never guesses a note or
@@ -160,6 +172,10 @@ npm run package
 Source lives in `src/`. `dist/`, `release/`, and `package.zip` are generated.
 
 ## Reporting issues
+
+There is no separate promotional post for Table Merge. To report a problem,
+reply to the “Table Merge / 表格合并” feedback thread under the
+[Auto Favicon community post](https://ld246.com/article/1785052610863).
 
 Remove private links, access codes, note content, block IDs, and workspace
 paths before posting public reports. See [SECURITY.md](SECURITY.md) and
